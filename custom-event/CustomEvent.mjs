@@ -1,12 +1,14 @@
 import {EventEmitter} from 'events';
 
 export class CustomEvent extends EventEmitter {
-    printMessage(data) {
+
+    printMessageEmitter(data) {
         console.log(data);
         this.emit("printMessage");
     }
 
-    printWelcome(name) {
+
+    printWelcomeEmitter(name) {
         console.log(name);
         this.emit("printWelcome");
     }
